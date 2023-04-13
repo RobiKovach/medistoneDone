@@ -3581,6 +3581,57 @@
                 },
                 on: {}
             });
+            new core(".events-ofers__slider", {
+                modules: [ Navigation, Pagination ],
+                observer: true,
+                observeParents: true,
+                spaceBetween: 10,
+                autoHeight: true,
+                slidesPerView: 3,
+                speed: 800,
+                loop: true,
+                preloadImages: false,
+                lazy: true,
+                pagination: {
+                    el: ".events-ofers__swiper-pagination",
+                    clickable: true
+                },
+                navigation: {
+                    prevEl: ".events-ofers__swiper-button-prev",
+                    nextEl: ".events-ofers__swiper-button-next"
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                        autoHeight: true,
+                        centeredSlides: true
+                    },
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                        autoHeight: true,
+                        centeredSlides: true
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 0
+                    },
+                    992: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    1268: {
+                        slidesPerView: 3,
+                        spaceBetween: 70
+                    },
+                    1485: {
+                        slidesPerView: 3,
+                        spaceBetween: 120
+                    }
+                },
+                on: {}
+            });
             new core(".events-offers__slider", {
                 modules: [ Navigation, Pagination ],
                 observer: true,
